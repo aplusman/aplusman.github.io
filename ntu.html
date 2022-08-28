@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<!-------------------------------------------->
+<!--                                                            -->
+<!--           My SLAM Website              -->
+<!--                                                            -->
+<!--     Created by David Wang           -->
+<!--     Modified on Aug 25, 2022       -->
+<!--                                                            -->
+<!-------------------------------------------->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SLAM - David's Blog</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="home/assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="home/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="home/assets/img/navbar-logo.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#slam_dataset">SLAM Dataset</a></li>
+						<li class="nav-item"><a class="nav-link" href="#awesome_slam">Awesome SLAM</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#slam_papers">Papers</a></li>
+						<li class="nav-item"><a class="nav-link" href="home/miscellaneous/miscellaneous0823.html">Miscellaneous</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To My SLAM Workshop!</div>
+                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#slam_dataset">Learn More</a>
+            </div>
+        </header>
+		
+        <!-- slam_dataset-->
+        <section class="page-section" id="slam_dataset">
+			<div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">SLAM Dataset</h2>
+                    <h3 class="section-subheading text-muted">Account: b05502097  ,  Password:  Data.b05502097</h3>
+                </div>
+				
+				<div class="text-center">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th> Dataset (Year)  </th> 
+								<th> Sensor </th> 
+								<th> Environment </th> 
+								<th> Ground Truth </th> 
+								<th> Details </th> 
+							</tr>
+						</thead>						
+						<tbody>
+							<tr> <!-- dataset: TUM RGB-D -->
+								<td> TUM RGB-D (2012) 
+									<a href="https://vision.in.tum.de/data/datasets/rgbd-dataset/download"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> RGB-D </td>
+								<td> indoor </td>
+								<td> motion capture </td>
+								<td> Microsoft Xbox Kinect sensor: 30 Hz 640 x 480 8-bit RGB and 16-bit depth map </td>
+							</tr>
+							
+							<tr> <!-- dataset: TUM VI -->
+								<td> TUM VI (2018) 
+									<a href="https://vision.in.tum.de/data/datasets/visual-inertial-dataset"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> stereo + IMU </td>
+								<td> indoor/outdoor </td>
+								<td> motion capture </td>
+								<td> </td>
+							</tr>
+							
+							<tr> <!-- dataset: TUM MonoVO -->
+								<td> TUM MonoVO (2016) 
+									<a href="https://vision.in.tum.de/data/datasets/mono-dataset"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> monocular </td>
+								<td> indoor/outdoor </td>
+								<td> loop drift </td>
+								<td> </td>
+							</tr>
+							
+							<tr> <!-- dataset: KITTI -->
+								<td> KITTI (2012, 2015) 
+									<a href="http://www.cvlibs.net/datasets/kitti/raw_data.php"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> stereo/3D LiDAR </td>
+								<td> outdoor </td>
+								<td> GPS/INS </td>
+								<td> </td>
+							</tr>
+							
+							<tr> <!-- dataset: EuRoc -->
+								<td> EuRoc MAV (2016)
+									<a href="https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> stereo + IMU </td>
+								<td> indoor </td>
+								<td> station/motion capture </td>
+								<td> stereo 20 FPS and IMU 200 Hz</td>
+							</tr>
+							
+							<tr> <!-- dataset: ICL-NUIM -->
+								<td> ICL-NUIM (2014)
+									<a href="https://www.doc.ic.ac.uk/~ahanda/VaFRIC/iclnuim.html"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> RGB-D </td>
+								<td> indoor </td>
+								<td> 3D surface model SLAM estimation </td>
+								<td> </td>
+							</tr>
+							
+							<tr> <!-- Hilti SLAM Challenge -->
+								<td> Hilti SLAM (2021)
+									<a href="https://hilti-challenge.com/dataset-2022.html"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> 5 Cameras + 2 Lidars + 3 IMUs </td>
+								<td> indoor/outdoor </td>
+								<td> MoCap, Total Station </td>
+								<td> </td>
+							</tr>
+							
+							<tr> <!-- dataset: Cityscapes -->
+								<td> Cityscapes (2015, 2016) 
+									<a href="https://www.cityscapes-dataset.com/"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> stereo </td>
+								<td> outdoor (urban street) </td>
+								<td> GPS </td>
+								<td> </td>
+							</tr>
+							
+							<tr> <!-- dataset: DIML: indoor -->
+								<td> DIML: indoor (2016)
+									<a href="https://dimlrgbd.github.io/"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> RGB-D </td>
+								<td> indoor </td>
+								<td> </td>
+								<td> Microsoft Kinect v2 </td>
+							</tr>
+							
+							<tr> <!-- dataset: DIML: outdoor -->
+								<td> DIML: outdoor (2016)
+									<a href="https://dimlrgbd.github.io/"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> stereo </td>
+								<td> outdoor </td>
+								<td> </td>
+								<td> ZED and built-in camera </td>
+							</tr>
+							
+							<tr> <!-- dataset: NYU-Depth V2 -->
+								<td> NYU-Depth V2 (2012)
+									<a href="https://www.doc.ic.ac.uk/~ahanda/VaFRIC/iclnuim.html"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> RGB-D </td>
+								<td> </td>
+								<td> </td>
+								<td> </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			
+				A complete set of Awesome SLAM Datasets can be found here: 
+				<a href="https://github.com/youngguncho/awesome-slam-datasets">
+					https://github.com/youngguncho/awesome-slam-datasets
+				</a>
+				
+			</div>
+        </section>
+		
+        <!-- awesome_slam-->
+        <section class="page-section bg-light" id="awesome_slam">
+            <div class="container">			
+				<div class="text-center">
+                    <h2 class="section-heading text-uppercase">Awesome SLAM</h2>
+                </div>				
+				Github sources for awesome SLAM		
+				<div class="text-center">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th> Repo </th> 
+								<th> Details </th> 
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td> SilenceOverflow
+									<a href="https://github.com/SilenceOverflow/Awesome-SLAM"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> code, datasets, tutorials </td>
+							</tr>
+							
+							<tr>
+								<td> kanster
+									<a href="https://github.com/kanster/awesome-slam"> <i class="fas fa-external-link-alt"> </i> </a>
+								</td>
+								<td> Books, Courses,  Papers, Datasets, Code </td>
+							</tr>
+						</tbody>
+						
+					</table>
+				</div>		
+				
+            </div>
+        </section>
+		
+		<!-- slam_papers-->
+        <section class="page-section" id="slam_papers">
+			<div class="container">
+				<div class="text-center">
+						<h2 class="section-heading text-uppercase">Papers</h2>
+                </div>
+				<table class="table">
+					<tr>
+						<th class="thead th"> Title </th> 
+						<th class="thead th"> Year </th> 
+						<th class="thead th"> First Author </th> 
+						<th class="thead th"> Comments </th> 
+					</tr>
+					
+					<tr>
+						<td> 
+							<a href="./home/papers/review0828.html#handa2014benchmark"> 
+								A benchmark for RGB-D visual odometry, 3D reconstruction and SLAM 
+							</a>
+						</td>
+						<td> 2014 </td>
+						<td> Ankur Handa </td>
+						<td>  </td>
+					</tr>
+					
+					<tr>
+						<td> 
+							<a href="./home/papers/review0828.html#naseer2018indoor"> 
+								Indoor Scene Understanding in 2.5/3D for Autonomous Agents: A Survey
+							</a>
+						</td>
+						<td> 2018 </td>
+						<td> Muzammal  Naseer </td>
+						<td>  </td>
+					</tr>
+					
+					<tr>
+						<td> 
+							<a href="./home/papers/review0828.html#huang2022surface"> 
+								Surface Reconstruction from Point Clouds: A Survey and a Benchmark
+							</a>
+						</td>
+						<td> 2022 </td>
+						<td> Zhangjin Huang </td>
+						<td>  </td>
+					</tr>
+					
+					<tr>
+						<td> 
+							<a href="./home/papers/review0828.html#berger2017survey"> 
+								A Survey of Surface Reconstruction from Point Clouds
+							</a>
+						</td>
+						<td> 2017 </td>
+						<td> Matthew Berger </td>
+						<td>  </td>
+					</tr>
+					
+					
+					
+					
+				</table>
+            </div>
+        </section>
+		
+		<!-- miscellaneous_slam-->
+        <section class="page-section bg-light" id="miscellaneous_slam">
+			<div class="container">
+				<div class="text-center">
+                    <h2 class="section-heading text-uppercase">miscellaneous SLAM</h2>
+                </div>
+				To do ...
+            </div>
+        </section>
+	
+		
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; David's Blog 2022</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="home/js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
